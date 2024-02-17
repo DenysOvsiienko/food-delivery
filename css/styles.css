@@ -62,8 +62,10 @@ body {
 .logo {
   margin-right: auto;
 }
+
 .nav {
 }
+
 .nav-list {
   display: flex;
   gap: 28px;
@@ -77,4 +79,123 @@ body {
 .offering-btn {
   border: 2px solid #7eb101;
   background-color: #fff;
+}
+
+.hero {
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  padding-top: 14px;
+  padding-bottom: 69px;
+  justify-content: space-between;
+}
+.hero-wrapper {
+  min-width: 511px;
+}
+.hero-title {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+.hero-text {
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  border-radius: 291px;
+  width: 580px;
+  height: 580px;
+  border-radius: 50%;
+  border: 26px solid #ffe550;
+  background-color: #fefefe;
+}
+
+.offering {
+  padding-top: 167px;
+  padding-bottom: 124px;
+  background-color: #ffe550;
+}
+.offering-container {
+  display: flex;
+  align-items: center;
+  padding-right: 51px;
+  justify-content: space-between;
+}
+
+.offering-img-wrap {
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  background-color: #fefefe;
+}
+
+.offering-text-wrapper {
+  max-width: 573px;
+}
+
+.offering-title {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.offering-text {
+  line-height: 1.5;
+  margin-bottom: 48px;
+}
+.offering-list {
+  display: flex;
+  gap: 67px;
+  margin-bottom: 32px;
+}
+
+.offering-item {
+}
+
+.offering-subtitle {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+.offering-desc {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.favorites {
+  padding-top: 120px;
+  padding-bottom: 101px;
+  padding-left: 32px;
+}
+
+.favorites-title {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.favorites-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.favorites-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc((100% - 32px * 2) / 3);
+  border: 16px solid #ffe550;
+  border-radius: 50%;
+  background-color: #fefefe;
 }
