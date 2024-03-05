@@ -35,7 +35,9 @@
             <li><a class="nav-link" href="">Contact</a></li>
           </ul>
         </nav>
-        <button class="main-btn" type="button">Order Now</button>
+        <button data-modal-open class="main-btn" type="button">
+          Order Now
+        </button>
       </div>
     </header>
     <main>
@@ -67,6 +69,7 @@
         <div class="container">
           <div class="offering-img-wrap-border">
             <div class="offering-img-wrap">
+              <div class="offering-img-shadow"></div>
               <img
                 class="offering-img"
                 src="./images/apple.png"
@@ -85,6 +88,11 @@
             </p>
             <ul class="offering-list">
               <li class="offering-item">
+                <div class="offering-icon-wrapper">
+                  <svg class="offering-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-rocket_launch"></use>
+                  </svg>
+                </div>
                 <h3 class="offering-subtitle">Fastest Delivery</h3>
                 <p class="offering-desc">
                   Our advanced logistics system and dedicated delivery partners
@@ -92,6 +100,11 @@
                 </p>
               </li>
               <li class="offering-item">
+                <div class="offering-icon-wrapper">
+                  <svg class="offering-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-touch_app"></use>
+                  </svg>
+                </div>
                 <h3 class="offering-subtitle">Easy To Order</h3>
                 <p class="offering-desc">
                   You can browse through a wide variety of cuisines and
@@ -290,15 +303,15 @@
       </div>
     </footer>
     <!-- Modal window -->
-    <div class="backdrop is-open">
+    <div class="backdrop" data-modal>
       <div class="order-form-dialog-container">
-        <button class="order-form-close-btn" type="button">
+        <button class="order-form-close-btn" type="button" data-modal-close>
           <svg class="icon" width="24" height="24">
             <use href="./images/icons.svg#icon-close-btn"></use>
           </svg>
         </button>
         <p class="order-form-dialog-title">Order Form</p>
-        <form class="order-form">
+        <form>
           <div class="order-form-input-container">
             <label class="order-form-input-label" for="user-name"> Name </label>
             <input
@@ -337,9 +350,37 @@
               required
             />
           </div>
+          <div class="oreder-form-checkbox-wrapper">
+            <input
+              class="order-form-privacy-checkbox visually-hidden"
+              type="checkbox"
+              value="true"
+              id="order-form-privacy-checkbox"
+              name="order-form-privacy-checkbox"
+              required
+            />
+            <label
+              class="order-form-privacy-checkbox-label"
+              for="order-form-privacy-checkbox"
+              ><span class="order-form-custom-checkmark"
+                ><svg
+                  class="order-form-custom-checkmark-icon"
+                  width="10"
+                  height="8"
+                >
+                  <use
+                    href="./images/icons.svg#icon-checkmark"
+                  ></use></svg></span
+              >I accept the terms and conditions of the&nbsp;
+              <a class="order-form-privacy-link" href=""
+                >Privacy Policy</a
+              ></label
+            >
+          </div>
+          <button class="main-btn" type="submit">Send</button>
         </form>
-        <button class="main-btn" type="submit">Send</button>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
