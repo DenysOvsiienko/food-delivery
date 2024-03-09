@@ -55,12 +55,20 @@
             <button class="main-btn" type="button">Order Now</button>
           </div>
           <div class="hero-img">
-            <img
-              src="./images/salad.png"
-              alt="Greek salad"
-              width="528"
-              height="528"
-            />
+            <picture>
+              <source
+                media="(min-width: 1280px), (max-width: 767px)"
+                srcset="
+                  ./images/desktop-hero-food.png    1x,
+                  ./images/desktop-hero-food@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px), (max-width: 1279px)"
+                srcset="./images/tablet-hero-food@2x.png 2x"
+              />
+              <img src="./images/tablet-hero-food.png" alt="Greek salad" />
+            </picture>
           </div>
         </div>
       </section>
@@ -114,6 +122,12 @@
               </li>
             </ul>
             <button class="main-btn" type="button">Order now</button>
+            <a href="" class="offering-link">
+              Read More&nbsp;
+              <svg width="15" height="14">
+                <use href="./images/icons.svg#arrow-right"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -124,52 +138,127 @@
           <p class="favorites-text">Looking for something delicious?</p>
           <ul class="favorites-list">
             <li class="favorites-list-item">
-              <img
-                src="./images/gamburger.png"
-                alt="Gamburger"
-                width="315"
-                height="315"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/gamburger.jpg    1x,
+                    ./images/gamburger@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/gamburger-tablet.jpg    1x,
+                    ./images/gamburger-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/gamburger-mobile@2x.jpg 2x"
+                />
+                <img src="./images/gamburger-mobile.jpg" alt="Gamburger" />
+              </picture>
             </li>
             <li class="favorites-list-item">
-              <img
-                src="./images/pasta.png"
-                alt="Pasta"
-                width="315"
-                height="315"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="./images/pasta.jpg 1x, ./images/pasta@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/pasta-tablet.jpg    1x,
+                    ./images/pasta-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/pasta-mobile@2x.jpg 2x"
+                />
+                <img src="./images/pasta-mobile.jpg" alt="Pasta" />
+              </picture>
             </li>
             <li class="favorites-list-item">
-              <img
-                src="./images/pizza.png"
-                alt="Pizza"
-                width="315"
-                height="315"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="./images/pizza.jpg 1x, ./images/pizza@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/pizza-tablet.jpg    1x,
+                    ./images/pizza-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/pizza-mobile@2x.jpg 2x"
+                />
+                <img src="./images/pizza-mobile.jpg" alt="Pizza" />
+              </picture>
             </li>
             <li class="favorites-list-item">
-              <img
-                src="./images/chicken.png"
-                alt="Chicken"
-                width="315"
-                height="315"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="./images/chicken.jpg 1x, ./images/chicken@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/chicken-tablet.jpg    1x,
+                    ./images/chicken-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/chicken-mobile@2x.jpg 2x"
+                />
+                <img src="./images/chicken-mobile.jpg" alt="Chicken" />
+              </picture>
             </li>
             <li class="favorites-list-item">
-              <img
-                src="./images/salad2.png"
-                alt="Salad"
-                width="315"
-                height="315"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="./images/salad.jpg 1x, ./images/salad@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/salad-tablet.jpg    1x,
+                    ./images/salad-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/salad-mobile@2x.jpg 2x"
+                />
+                <img src="./images/salad-mobile.jpg" alt="Salad" />
+              </picture>
             </li>
             <li class="favorites-list-item">
-              <img
-                src="./images/borshch.png"
-                alt="Borshch"
-                width="315"
-                height="315"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="./images/borshch.jpg 1x, ./images/borshch@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/borshch-tablet.jpg    1x,
+                    ./images/borshch-tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/borshch-mobile@2x.jpg 2x"
+                />
+                <img src="./images/borshch-mobile.jpg" alt="Borshch" />
+              </picture>
             </li>
           </ul>
         </div>
@@ -177,51 +266,53 @@
       <!-- Customers reviews -->
       <section class="customers-reviews">
         <div class="container">
-          <h2 class="customers-title">What our Customers Say</h2>
-          <p class="customers-subtitle">
+          <h2 class="customers-reviews-title">What our Customers Say</h2>
+          <p class="customers-reviews-subtitle">
             Don't just take our word for it - see what our satisfied customers
             have to say
           </p>
           <ul class="customers-reviews-list">
             <li class="customers-reviews-list-item">
+              <div class="customers-reviews-star-rating"></div>
               <p class="customers-reviews-list-item-text">
                 “The Best app I have used to order food in a while, so many
                 options to choose from too, I would recommend to a freind, No
                 questions asked”
               </p>
-              <div class="customers-review-personal-info">
+              <div class="customers-reviews-personal-info">
                 <img
                   src="./images/man.png"
                   alt="Sumith Shah"
                   width="48"
                   height="48"
                 />
-                <div class="customers-reviev-personal-info-text-container">
-                  <h3 class="customers-review-personal-info-name">
+                <div class="customers-reviews-personal-info-text-container">
+                  <h3 class="customers-reviews-personal-info-name">
                     Sumith Shah
                   </h3>
-                  <p class="customers-review-personal-info-desc">Some Dude</p>
+                  <p class="customers-reviews-personal-info-desc">Some Dude</p>
                 </div>
               </div>
             </li>
             <li class="customers-reviews-list-item">
+              <div class="customers-reviews-star-rating"></div>
               <p class="customers-reviews-list-item-text">
                 “The ease with which I can just go in and order what i want was
                 amazing, It has been a very pleasant experience ordering from
                 this app”
               </p>
-              <div class="customers-review-personal-info">
+              <div class="customers-reviews-personal-info">
                 <img
                   src="./images/woman.png"
                   alt="Sumith Shah"
                   width="48"
                   height="48"
                 />
-                <div class="customers-reviev-personal-info-text-container">
-                  <h3 class="customers-review-personal-info-name">
+                <div class="customers-reviews-personal-info-text-container">
+                  <h3 class="customers-reviews-personal-info-name">
                     Sumith Shah
                   </h3>
-                  <p class="customers-review-personal-info-desc">Some Dude</p>
+                  <p class="customers-reviews-personal-info-desc">Some Dude</p>
                 </div>
               </div>
             </li>
