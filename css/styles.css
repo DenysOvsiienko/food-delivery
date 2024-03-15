@@ -30,7 +30,7 @@ address {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #2c2c2c;
   background-color: #fff;
 }
@@ -909,6 +909,12 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .footer .container {
+    background-image: url(../images/mobile_footer_bg_image@2x.jpg);
+  }
+}
+
 .footer-nav-subscribe-box {
   display: flex;
   flex-direction: column;
@@ -1022,6 +1028,12 @@ body {
     padding-bottom: 100px;
   }
 
+  @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .footer .container {
+      background-image: url(../images/tablet_footer_bg_image@2x.jpg);
+    }
+  }
+
   .footer-nav-subscribe-box {
     margin-bottom: 100px;
   }
@@ -1091,6 +1103,12 @@ body {
   .footer .container {
     background-image: url(../images/footer_bg_image.jpg);
     background-size: 1211px;
+  }
+
+  @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+    .footer .container {
+      background-image: url(../images/footer_bg_image@2x.jpg);
+    }
   }
 
   .footer-nav-subscribe-box {
