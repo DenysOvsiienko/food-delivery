@@ -536,6 +536,10 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mobile-hidden-item {
+  display: none;
+}
+
 .favorites-list-item:hover {
   border: 11px solid #bbf330;
 }
@@ -577,6 +581,10 @@ body {
     background-color: #fefefe;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 41px 40px;
+  }
+
+  .mobile-hidden-item {
+    display: block;
   }
 
   .favorites-list-item:hover {
