@@ -1111,11 +1111,13 @@ body {
   .footer .container {
     background-image: url(../images/footer_bg_image.jpg);
     background-size: 1211px;
+    background-position: bottom 0 left 53px;
   }
 
   @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
     .footer .container {
       background-image: url(../images/footer_bg_image@2x.jpg);
+      background-position: bottom 0 left 53px;
     }
   }
 
