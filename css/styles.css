@@ -33,6 +33,24 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #2c2c2c;
   background-color: #fff;
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .visually-hidden {
@@ -117,7 +135,7 @@ body {
 }
 
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:focus-visible {
   color: #bbf330;
 }
 
@@ -126,7 +144,7 @@ body {
 }
 
 .header .main-btn:hover,
-.header .main-btn:focus {
+.header .main-btn:focus-visible {
   background-color: #ffe450;
 }
 
@@ -145,7 +163,7 @@ body {
 /* ================= / Header styles==================== */
 
 /* =================Hero sections styles================ */
-/* ___Mobile adaptaion___________Hero sections styles___ */
+/* ___Mobile adaptation___________Hero sections styles___ */
 .hero {
   background-color: #ffffff;
   padding-top: 60px;
@@ -170,7 +188,7 @@ body {
 }
 
 .hero .main-btn:hover,
-.hero .main-btn:focus {
+.hero .main-btn:focus-visible {
   background-color: #ffe450;
 }
 
@@ -255,7 +273,7 @@ body {
 /* ================= / Header styles==================== */
 
 /* ===============Offering sections styles============== */
-/* ___Mobile adaptaion_______Offering sections styles___ */
+/* ___Mobile adaptation_______Offering sections styles___ */
 
 .offering {
   padding-top: 31px;
@@ -368,7 +386,7 @@ body {
 }
 
 .offering .main-btn:hover,
-.offering .main-btn:focus {
+.offering .main-btn:focus-visible {
   border: #bbf330;
   background-color: #bbf330;
 }
@@ -499,7 +517,7 @@ body {
 /* ============ / Offering sections styles============== */
 
 /* ===============Favorites section styles============== */
-/* ___Mobile adaptaion_______Favorites section styles___ */
+/* ___Mobile adaptation_______Favorites section styles___ */
 .favorites {
   padding-top: 66px;
   padding-bottom: 60px;
@@ -584,7 +602,7 @@ body {
   }
 
   .mobile-hidden-item {
-    display: block;
+    display: flex;
   }
 
   .favorites-list-item:hover {
@@ -633,7 +651,7 @@ body {
 /* =============/ Favorites section styles============== */
 
 /* ============Customers reviews section styles============= */
-/* ___Mobile adaptaion___Customers reviews section styles___ */
+/* ___Mobile adaptation___Customers reviews section styles___ */
 .customers-reviews {
   padding-top: 60px;
   padding-bottom: 9px;
@@ -817,7 +835,7 @@ body {
 }
 
 .subscribe .main-btn:hover,
-.subscribe .main-btn:focus {
+.subscribe .main-btn:focus-visible {
   background-color: #ffe450;
 }
 
@@ -991,7 +1009,7 @@ body {
 }
 
 .footer-subscribe-form .main-btn:hover,
-.footer-subscribe-form .main-btn:focus {
+.footer-subscribe-form .main-btn:focus-visible {
   border: 2px solid #ffe450;
 }
 
@@ -1198,7 +1216,7 @@ body {
 }
 
 .order-form-close-btn:hover,
-.order-form-close-btn:focus {
+.order-form-close-btn:focus-visible {
   background-color: #7eb101;
   fill: #ffffff;
 }
@@ -1234,11 +1252,11 @@ body {
   padding: 14px 12px;
 }
 
-.order-form-input:focus {
+.order-form-input:focus-visible {
   border: 1px solid #7eb101;
 }
 
-.oreder-form-checkbox-wrapper {
+.order-form-checkbox-wrapper {
   margin-bottom: 24px;
 }
 
@@ -1269,6 +1287,8 @@ body {
 .order-form-privacy-link {
   color: #2c2c2c;
   text-decoration: underline;
+  display: block;
+  padding-left: 24px;
 }
 
 .order-form-dialog-container .main-btn {
@@ -1281,7 +1301,7 @@ body {
   margin-right: auto;
 }
 
-.order-form-dialog-container .main-btn:focus,
+.order-form-dialog-container .main-btn:focus-visible,
 .order-form-dialog-container .main-btn:hover {
   background: #bbf330;
 }
