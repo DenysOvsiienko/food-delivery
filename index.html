@@ -56,21 +56,69 @@
               Order Now
             </button>
           </div>
-          <div class="hero-img">
-            <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/desktop-hero-food.png    1x,
-                  ./images/desktop-hero-food@2x.png 2x
-                "
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="./images/tablet-hero-food@2x.png 2x"
-              />
-              <img src="./images/tablet-hero-food.png" alt="Greek salad" />
-            </picture>
+          <div class="hero-slider-container">
+            <div class="hero-img">
+              <div class="slider-wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="
+                      ./images/desktop-hero-food.png    1x,
+                      ./images/desktop-hero-food@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/tablet-hero-food@2x.png 2x"
+                  />
+                  <img src="./images/tablet-hero-food.png" alt="Greek salad" />
+                </picture>
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="
+                      ./images/desktop-hero-food-2.png    1x,
+                      ./images/desktop-hero-food-2@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/tablet-hero-food-2@2x.png 2x"
+                  />
+                  <img
+                    src="./images/tablet-hero-food-2.png"
+                    alt="Meatballs with sauce"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="
+                      ./images/desktop-hero-food-3.png    1x,
+                      ./images/desktop-hero-food-3@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./images/tablet-hero-food-3@2x.png 2x"
+                  />
+                  <img
+                    src="./images/tablet-hero-food-3.png"
+                    alt="Egg with vegetables"
+                  />
+                </picture>
+              </div>
+            </div>
+            <button class="slider-btn prev-slider" type="button">
+              <svg width="12" height="22">
+                <use href="./images/icons.svg#arrow-right"></use>
+              </svg>
+            </button>
+            <button class="slider-btn next-slider" type="button">
+              <svg width="12" height="22">
+                <use href="./images/icons.svg#arrow-right"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -126,10 +174,10 @@
             <button data-modal-open class="main-btn" type="button">
               Order now
             </button>
-            <a href="" class="offering-link">
+            <a href="#" class="offering-link">
               Read More&nbsp;
-              <svg width="15" height="14">
-                <use href="./images/icons.svg#arrow-right"></use>
+              <svg width="6" height="10">
+                <use href="./images/icons.svg#arrow-read-more"></use>
               </svg>
             </a>
           </div>
@@ -476,5 +524,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/hero-slider.js"></script>
   </body>
 </html>

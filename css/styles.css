@@ -192,7 +192,7 @@ html {
   background-color: #ffe450;
 }
 
-.hero-img {
+.hero-slider-container {
   display: none;
 }
 
@@ -220,24 +220,72 @@ html {
     width: 336px;
   }
 
-  .hero-img {
+  .hero-slider-container {
+    display: flex;
     position: absolute;
-    display: block;
     top: 89px;
     right: 40px;
+  }
+
+  .hero-img {
+    display: flex;
     width: 320px;
     height: 320px;
     border-radius: 50%;
     border: 14px solid #ffe550;
     background-color: #fefefe;
+    overflow: hidden;
+  }
+
+  .slider-wrapper {
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+    display: flex;
+    height: 100%;
+    width: 876px;
+  }
+
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: transparent;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+    stroke: #2c2c2c;
+    outline: none;
+    width: 34px;
+    height: 28px;
+  }
+
+  .slider-btn:active {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16);
+  }
+
+  .slider-btn.prev-slider {
+    left: -8px;
+    transform: translate(-50%, -50%);
+  }
+
+  .slider-btn.next-slider {
+    right: -8px;
+    transform: translate(50%, -50%);
+  }
+
+  .slider-btn.prev-slider svg {
+    transform: rotate(180deg);
   }
 }
 
 /* ___Desktop adaptation________________Common styles___ */
 @media screen and (min-width: 1280px) {
   .hero {
-    padding-top: 14px;
-    padding-bottom: 69px;
+    padding-top: 159px;
+    padding-bottom: 219px;
   }
 
   .hero .container {
@@ -263,11 +311,21 @@ html {
   }
 
   .hero-img {
-    position: static;
     width: 580px;
     height: 580px;
     border: 26px solid #ffe550;
-    background-color: #fefefe;
+  }
+
+  .slider-wrapper {
+    width: 1584px;
+  }
+
+  .slider-btn.prev-slider {
+    left: 4px;
+  }
+
+  .slider-btn.next-slider {
+    right: 4px;
   }
 }
 /* ================= / Header styles==================== */
@@ -396,11 +454,13 @@ html {
   line-height: 1.5;
   color: #000;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  gap: 4px;
   padding: 7px 0;
   margin-left: 24px;
+  fill: #000;
 }
 
 /* ___Tablet adaptation_______Offering sections styles___ */
@@ -920,7 +980,7 @@ html {
 /* =============/ Subscribe section styles============== */
 
 /* ===============Footer section styles================= */
-/* ___Mobile adaptaion__________Footer section styles___ */
+/* ___Mobile adaptation__________Footer section styles___ */
 .footer {
   box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
   background: #fefefe;
@@ -1185,7 +1245,7 @@ html {
   flex-direction: column;
   top: 50%;
   left: 50%;
-  width: 458px;
+  width: 320px;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 30px;
@@ -1287,8 +1347,6 @@ html {
 .order-form-privacy-link {
   color: #2c2c2c;
   text-decoration: underline;
-  display: block;
-  padding-left: 24px;
 }
 
 .order-form-dialog-container .main-btn {
@@ -1304,4 +1362,11 @@ html {
 .order-form-dialog-container .main-btn:focus-visible,
 .order-form-dialog-container .main-btn:hover {
   background: #bbf330;
+}
+
+/* ___Tablet adaptation____Modal window styles styles___ */
+@media screen and (min-width: 768px) {
+  .order-form-dialog-container {
+    width: 458px;
+  }
 }
