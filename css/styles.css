@@ -288,10 +288,6 @@ html {
     padding-bottom: 219px;
   }
 
-  .hero .container {
-    position: static;
-  }
-
   .hero-wrapper {
     min-width: 511px;
     margin-right: 143px;
@@ -308,6 +304,10 @@ html {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 40px;
+  }
+
+  .hero-slider-container {
+    top: -149px;
   }
 
   .hero-img {
